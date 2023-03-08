@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* vertical slider css with animation  */
+.slick-list {
+  /* background-color: aquamarine; */
+  padding: 4rem;
+  height: 90vh;
+}
+.slick-dots{
+  display: none !important;
+}
+.card-design {
+  /* margin: 0 8rem 0 0; */
+  height: 70vh;
+  top: 6rem;
+  left: 5%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 85%;
+  /* position: relative; */
+  /* top:90%; */
+  /* left: 1%; */
+}
+
+
+.cards-text {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+
+/* .slick-slider-fade .slick-track {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  transform: none !important;
+} */
+
+
+
+.slick-dots li button {
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  width: 8rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+}
+
+.slick-dots li button:before {
+  /* content: "\2022"; */
+  display: inline-block;
+  color: #ddd;
+  transform: translatex(-50%);
+}
+
+/* .slick-dots li.slick-active button:before {
+    color: #007bff;
+  } */
+
+.slick-dots li.slick-active button {
+  /* content: "\2022"; */
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  /* transform: translate(50%);; */
+  /* list-style: none;
+  width: 8rem; */
+}
+
+/* .slick-dots li {
+  width: 8rem;
+  margin: 0;
+  height: 2px;
+} */
+
+.slick-dots li.slick-active button:before {
+  color: transparent;
+}
+
+.slick-dots li>button::before {
+  color: transparent;
+  content: none;
+}
+
+
+/* vvvvvvvv */
+
+
+/* .slick-slider {
+  border: 10px solid lightgrey;
+  width: 100%;
+  padding: 0;
+  position: relative;
+  top: 5%; 
+      
+} */
+
+/* #slider {
+  background-color: grey;
+  height: 100%;
+  padding: 2% 10%;
+  
+} */
+
+.slider {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.slide {
+  position: relative;
+  border: none;
+}
+
+.slide-content {
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  height: 100%;
+  width: 35%;
+  background-color: #000;
+  opacity: 0.8;
+  color: #fff;
+  text-align: center;
+  padding: 25px 70px 25px 25px;
+  text-align: left;
+
+}
+
+
+/* Slick Dots */
+
+.slick-dots {
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  /* transform: translateY(-50%); */
+  list-style: none;
+  text-align: center;
+  margin: 0px 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  width: 25rem;
+}
+
+.slick-dots li.slick-active {
+
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  height: 5px;
+  width: 4rem;
+}
+
+
+
+
+/* Slick Arrows */

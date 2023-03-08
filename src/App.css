@@ -1,0 +1,1222 @@
+/* Font and some common css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.yellow-text {
+  color: #FF9700;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.mr-3 {
+  margin-right: 3rem;
+}
+
+.mr-4 {
+  margin-right: 4rem;
+}
+
+.animate__animated {
+  animation-delay: 1s;
+}
+
+@font-face {
+  src: url("./Assets/Medhafonts/Bebas_Neue_Pro_Fonts/BebasNeuePro-Bold.ttf");
+  font-family: BebasNeue;
+}
+
+@font-face {
+  src: url("./Assets/Medhafonts/Lato/Lato-Black.ttf");
+  font-family: Lato;
+}
+
+@font-face {
+  src: url("./Assets/Medhafonts/Lato/Lato-Light.ttf");
+  font-family: Latolight;
+}
+
+@font-face {
+  src: url("./Assets/Medhafonts/Lato/Lato-Regular.ttf");
+  font-family: Latoregular;
+}
+
+@font-face {
+  src: url("./Assets/Medhafonts/Lato/Lato-Thin.ttf");
+  font-family: Latothin;
+}
+
+
+
+
+/* FIrstslide */
+
+.fistslide {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: url('./Assets/Images/Shalini-banner.jpg');
+  text-align: center;
+  background-position-x: center;
+}
+
+.line {
+  width: 7rem;
+  height: 0;
+  border: 2px solid #FF9700;
+  margin: 3px;
+  display: inline-block;
+}
+
+.FirstSlide_text {
+  position: relative;
+  bottom: 1rem;
+  color: #fff;
+}
+
+.Audacious_text {
+  font-family: 'BebasNeue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.5rem;
+}
+
+.Annual_text {
+  font-family: 'Latoregular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.Time_text {
+  font-family: 'Latoregular';
+  font-style: normal;
+  font-size: 20px;
+  background-color: #F2F2F2;
+  width: 12rem;
+  display: block;
+  margin: 0 auto;
+  color: #282828;
+  border-radius: 0.6rem;
+}
+
+.FirstSlide_text>.animate__animated {
+  animation-delay: 2s;
+  margin-bottom: 0;
+}
+
+/* firsrt slide */
+
+/* second Slide */
+
+
+.Seond_slide {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: gold; */
+  border: 1px solid #D9D9D9;
+  text-align: center;
+}
+
+.example-element-visible {
+  font-family: 'BebasNeue';
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 4.5rem;
+  line-height: 5rem;
+  animation: backInUp 5s;
+  animation-fill-mode: both;
+  transform: translateY(100%);
+}
+
+@keyframes backInUp {
+  0% {
+    transform: translateY(100%) scale(0.5);
+  }
+
+  60% {
+    transform: translateY(-25%) scale(1.1);
+  }
+
+  100% {
+    transform: translateY(0%) scale(1);
+  }
+}
+
+
+
+
+/* second Slide */
+
+
+/* Third Slide */
+
+
+.content {
+  text-align: justify;
+  color: black;
+  font-family: 'BebasNeue', serif;
+
+}
+
+.card_1 {
+  /* border-radius: 1rem;
+  box-shadow: 0 0 20px 8px #d0d0d0; */
+  border: 1px solid #31B89D;
+  display: flex;
+  padding-top: 2rem;
+  /* background: linear-gradient(to top right, #3BE8B0, transparent);
+  border-radius: 0 0 50% 0; */
+}
+
+.card {
+  width: 25rem;
+  height: 20rem;
+}
+
+.Number_Text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4rem;
+  /* line-height: 3.5rem; */
+}
+
+.cards3rd {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at bottom left,
+      #82edcb,
+      #fff 45%);
+  /* border-radius: 0 0 50% 0; */
+}
+
+.info_text {
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 700;
+  color: #282828;
+  font-size: 1.5rem;
+  /* line-height: 2.5rem; */
+}
+
+
+.pulse {
+  animation: pulse 1s ease-out;
+  animation-iteration-count: 1;
+  transform-origin: center;
+}
+
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.flip-in-x {
+  animation: flipInX 0.5s;
+  animation-fill-mode: both;
+  transform-origin: center center;
+  visibility: visible !important;
+}
+
+@keyframes flipInX {
+  0% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1;
+  }
+
+  70% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+  }
+
+  100% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 0deg);
+  }
+}
+
+
+.first-row-cards{
+  position: relative;
+  right:3%;
+  margin-bottom: 1rem !important;
+  /* padding:2rem; */
+}
+.card_1{
+  margin: 1rem;
+}
+
+
+
+
+/* Third Slide */
+
+
+
+/* animation text  */
+
+
+/* 
+.animated {
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInUp {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateY(2000px);
+  }
+  60% {
+     opacity: 1;
+     -webkit-transform: translateY(-30px);
+  }
+  80% {
+     -webkit-transform: translateY(10px);
+  }
+  100% {
+     -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes bounceInUp {
+  0% {
+     opacity: 0;
+     transform: translateY(2000px);
+  }
+  60% {
+     opacity: 1;
+     transform: translateY(-30px);
+  }
+  80% {
+     transform: translateY(10px);
+  }
+  100% {
+     transform: translateY(0);
+  }
+}
+
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+} */
+
+
+/* animation text */
+
+
+/* vertical slider 1 */
+
+.vertical-slider1 {
+  width: 100% !important;
+  height: 100vh;
+
+}
+
+.vertical_slick_slider {
+  height: 100vh;
+}
+
+.slick-slide {
+  width: 100%;
+}
+
+.slick-slide .slick-cloned {
+  width: 100% !important;
+}
+
+.vertical-slider1 {
+  /* background-color: #FF9700; */
+}
+
+.backgournd-faded {
+  content: "";
+  background:
+    linear-gradient(90deg, #31B89D66, #31B89D66, #31B89D66), url("./Assets/Images/FAB_Uttarakhand.png") center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+  background-position-x: center;
+}
+
+.vert_cards_text {
+  font-family: 'BebasNeue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  /* line-height: 80px */
+}
+
+.vert_cards_text_lato {
+  font-family: lato;
+  font-size: 3rem;
+}
+
+.vert_cards_text_3rd {
+  font-size: 2.8rem;
+}
+
+.slick-next {
+  display: none !important;
+}
+
+.slick-prev {
+  display: none !important;
+}
+
+.circle {
+  background: #31B89D;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #FFF;
+  padding: 0 2rem;
+}
+
+
+
+/* vertical2-slide */
+
+
+.vertical2-slide {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* margin-top: 12rem; */
+}
+
+.vertical2-slide_main {
+  background: radial-gradient(circle at bottom right,
+      #82edcb,
+      #fff 25%);
+}
+
+/* .gOxcWJ {
+  display: none;
+}
+.hDienL{
+  display: none;
+} */
+
+.vert1-slide1-img {
+  width: 45rem;
+  height: 45rem;
+  border-radius: 50%;
+  transform: scale(1.2);
+}
+
+.greentext {
+  color: #31B89D;
+}
+
+.verticalslide1Head-text-1 {
+  font-family: 'Latolight' !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 2rem;
+  color: #282828 !important;
+
+}
+
+.list li {
+  list-style: none;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.list li {
+  animation: show 0.5s ease-out forwards;
+}
+
+.list li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.list li:nth-child(2) {
+  animation-delay: 1.4s;
+}
+
+.list li:nth-child(3) {
+  animation-delay: 1.6s;
+}
+
+.list li:nth-child(4) {
+  animation-delay: 1.8s;
+}
+
+.list li:nth-child(5) {
+  animation-delay: 2s;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scaleknoledge {
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 70px;
+}
+
+
+.residenseoursystem {
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.vertical-slide2-img {
+  position: relative;
+  left: 10%;
+}
+
+.verticalslide1Head {
+  position: relative;
+  left: 8%;
+  top: 10%;
+}
+
+.verticalslide1Head3 {
+  margin-top: 8rem;
+}
+
+.verticalslide1Head-text {
+  font-family: 'BebasNeue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  /* line-height: 5rem; */
+}
+
+.animatedlisticon {
+  width: 5rem;
+  height: 5rem;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+
+}
+
+.animated-icon-text {
+  /* margin-right: rem; */
+}
+
+.animatedlisticon3 {
+  margin-left: 2rem;
+}
+
+.vert1-slide2-img {
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+}
+
+.marginstate {
+  margin-left: 2rem;
+}
+
+.ml-2 {
+  margin-left: 1rem;
+  position: relative;
+  left: 4rem;
+}
+
+.ml-5 {
+  margin-left: 2rem;
+  position: relative;
+  left: 2rem;
+}
+
+.animatedlisttext {
+  font-family: 'Latolight' !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 1.6rem;
+  margin-top: 5rem !important;
+  /* line-height: 50px; */
+}
+
+/* cards  */
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px 20px;
+  margin: 0;
+  list-style: none;
+}
+
+.item-list121 {
+  width: 20rem;
+  /* min-height: 350px; */
+  /* background: white; */
+  border-radius: 5px;
+  /* box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3); */
+  opacity: 0;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+  /* line-height: 50px; */
+}
+
+.item-list123 {
+  display: flex;
+  justify-content: space-around;
+  /* width: 15rem;   */
+}
+
+.small-image-vertical2 {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.item-list121::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 140px;
+}
+
+.item-content {
+  padding: 20px;
+  /* color: gray; */
+}
+
+
+
+.upper-content-3rdslide {
+  display: block;
+  /* justify-content: center !important; */
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 2rem;
+  left: 5%;
+}
+
+.cards_3 {
+  position: relative;
+  /* left: 2%; */
+}
+
+.card_3vert2_text {
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  /* line-height: 50px; */
+}
+
+/* margin: 0 auto; */
+
+
+.semi-circle {
+  width: 75rem;
+  height: 30rem;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  border: 2px solid rgb(75, 247, 158);
+  border-bottom: 0;
+  position: relative;
+  top: 22rem;
+  left: 15%;
+}
+
+.second-line-content {
+  margin-left: 8%;
+  padding-top: 3rem;
+  position: relative;
+  bottom: 10rem;
+}
+
+.third-line-content {
+  margin-left: 10%;
+  position: relative;
+  bottom: 5rem;
+}
+
+.first-line-content {
+  position: relative;
+  bottom: 10rem;
+}
+
+.first-line-content-box-text {
+  width: 20rem;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  /* line-height: 3rem; */
+  text-align: center;
+  background: #F2F2F2;
+  border-radius: 125px;
+}
+
+.yellowbackground {
+  background-color: #FF9700;
+  color: #fff;
+}
+
+
+
+.uppercontent-head {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  /* line-height: 70px; */
+}
+
+.uppercontent-text {
+  font-family: 'Latoregular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-left: 2rem;
+  /* line-height: 50px; */
+  /* or 167% */
+}
+
+.greenbackgraound {
+  background-color: #31B89D;
+  width: 45rem;
+  height: 50rem;
+  border-bottom-left-radius: 50% 18rem;
+  border-bottom-right-radius: 50% 18rem;
+  /* font-size: 3.2rem; */
+  padding-top: 20px;
+  transform: rotate(180deg);
+  position: relative;
+  right: 45%;
+}
+
+.semi-circle1 {
+  width: 75rem;
+  height: 40rem;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  border: 10px solid rgba(242, 242, 242, 0.9);
+  border-bottom: 0;
+  position: relative;
+  top: 45rem;
+  left: 15%;
+}
+
+.potential-text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  /* line-height: 50px; */
+}
+
+
+/* Innovating */
+
+.Inovate_slide {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.carousel-wrapper_innovate {
+  background: radial-gradient(circle at top left,
+      rgb(242, 242, 242),
+      #31B89D 25%);
+}
+
+.INNOVATE_SLIDE1_heading_text {
+  font-family: 'BebasNeue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: #fff;
+}
+
+.INNOVATE_SLIDE1_para_text {
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  /* line-height: 50px; */
+  color: #fff;
+
+}
+.time_0s{
+  animation-delay: 0.2s;
+}
+.time_1s{
+  animation-delay: 0.6s;
+}
+.time_2s{
+  animation-delay: 1s;
+}
+.time_3s{
+  animation-delay: 1.2s;
+}
+.time_4s{
+  animation-delay: 1.4s;
+}
+
+.w3-animate-top {
+  animation-duration: 3s;
+}
+
+.dot {
+  height: 8rem;
+  width: 8rem;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.innovative_slide2_para_text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  /* line-height: 50px; */
+}
+
+.carousel-wrapper_innovate_slide3 {
+  background: url("./Assets/Images/HallBol_girl.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* height: 100%; */
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+  /* width: 12rem; */
+}
+
+.typewriter p {
+  /* color: #fff; */
+  font-family: monospace;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  /* border-right: .15em solid orange; The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+  font-size: 2rem;
+  position: relative;
+  top: 20rem;
+  left: 5%;
+  color: #fff;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange
+  }
+}
+
+
+
+
+.cursor {
+  display: inline-block;
+  position: absolute;
+  color: rgb(29, 28, 28);
+  width: 30rem;
+  z-index: 1;
+  top: 15% !important;
+  left: 30%;
+  font-size: 2rem;
+  /* left: 2rem; */
+  /* right: 1%; */
+}
+
+.cursor::after {
+  content: "";
+  margin: auto;
+  position: absolute;
+  right: -4px;
+  display: none;
+  top: 13rem;
+  width: 1px;
+  height: 100%;
+  background-color: rgb(255, 255, 255) !important;
+  animation: cursor-animation 1.5s step-end infinite;
+}
+
+.cursor1 {
+  display: inline-block;
+  position: absolute;
+  color: #000;
+  width: 30rem;
+  z-index: 10;
+  top: 15% !important;
+  right: 37.5%;
+  font-size: 1.8rem;
+  letter-spacing: 0.02in;
+}
+
+.cursor1::after {
+  content: "";
+  margin: auto;
+  position: absolute;
+  right: -4px;
+  display: none;
+  top: 13rem;
+  width: 1px;
+  height: 100%;
+  background-color: rgb(255, 255, 255) !important;
+  animation: cursor-animation 2.5s step-end infinite;
+}
+
+.cursor2 {
+  display: inline-block;
+  position: absolute;
+  color: #000;
+  width: 30rem;
+  z-index: 10;
+  top: 16% !important;
+  right: 9%;
+  font-size: 1.8rem;
+}
+
+.cursor2::after {
+  content: "";
+  margin: auto;
+  position: absolute;
+  right: -4px;
+  display: none;
+  top: 13rem;
+  width: 1px;
+  height: 100%;
+  background-color: rgb(255, 255, 255) !important;
+  animation: cursor-animation 3.5s step-end infinite;
+}
+
+@keyframes cursor-animation {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrowbuttons {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  /* display: inline-block; */
+  /* width: 100%; */
+}
+
+.back_main {
+  float: left;
+  width: 50%;
+}
+
+.arrows {
+  float: right;
+  width: 50%;
+}
+
+/*  */
+/* Innovating */
+
+
+/* Strength */
+.Strength_main {
+  background: radial-gradient(circle at top right,
+      #82edcb,
+      #fff 40%);
+
+}
+
+.item {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide_1_strength {
+  display: flex;
+  justify-content: center;
+}
+
+.slide_1_strength_heading {
+  font-family: 'BebasNeue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5rem;
+  /* line-height: ; */
+  text-align: center;
+}
+
+.slide_1_strength_text {
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  /* line-height: 50px; */
+}
+
+.slide_2_strength {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.slide_2_strength_heading {
+  font-family: 'LatoRegular';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3rem;
+  /* line-height: 70px; */
+}
+
+.slide_2_strength_text {
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  /* line-height: 50px; */
+}
+
+.cursor_slide {
+  display: inline-block;
+  position: absolute;
+  color: #000;
+  width: 40rem;
+  /* z-index: 10; */
+  top: 24% !important;
+  left: 29%;
+  font-size: 1.8rem;
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 600;
+}
+
+.story_head {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+}
+
+.cursor_slide::after {
+  content: "";
+  margin: auto;
+  position: absolute;
+  right: -4px;
+  display: none;
+  top: 13rem;
+  width: 1px;
+  height: 100%;
+  background-color: rgb(255, 255, 255) !important;
+  animation: cursor-animation 3.5s step-end infinite;
+}
+
+
+
+.swati_image {
+  width: 95%;
+  height: 99vh;
+  position: relative;
+  /* top: 1%; */
+  /* left: 12rem; */
+  /* z-index: 10; */
+}
+
+.cursor_slide2 {
+  display: inline-block;
+  position: absolute;
+  color: #000;
+  width: 40rem;
+  top: 27% !important;
+  left: 58%;
+  font-size: 1.8rem;
+  font-family: 'Latolight';
+  font-weight: 600;
+
+}
+
+.slide2>.head_slide_1 {
+  color: #FF9700 !important;
+  position: absolute;
+  top: 15%;
+  left: 29%;
+  font-family: 'Latolight';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 3rem;
+  /* line-height: 50px; */
+}
+
+.emp_slide_1 {
+  position: absolute;
+  top: 75%;
+  left: 29%;
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.slide4>.head_slide_2 {
+  color: #FF9700 !important;
+  position: absolute;
+  top: 15%;
+  left: 58%;
+  font-family: 'Latolight';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 3rem;
+  /* line-height: 50px; */
+}
+
+.emp_slide_2 {
+  position: absolute;
+  top: 75%;
+  left: 58%;
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.slide6>.head_slide_3 {
+  color: #FF9700 !important;
+  position: absolute;
+  top: 15%;
+  left: 87%;
+  font-family: 'Latolight';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.cursor_slide3 {
+  display: inline-block;
+  position: absolute;
+  color: #000;
+  width: 40rem;
+  /* z-index: 10; */
+  top: 26% !important;
+  left: 87%;
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  font-size: 1.8rem;
+  /* line-height: 50px; */
+}
+
+.emp_slide_3 {
+  position: absolute;
+  top: 75%;
+  left: 87%;
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+
+/* Strength */

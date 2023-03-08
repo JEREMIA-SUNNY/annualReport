@@ -1,0 +1,106 @@
+@font-face {
+  src: url("../../Assets/Medhafonts/Lato/Lato-Black.ttf");
+  font-family: Lato;
+}
+
+@font-face {
+  src: url("../../Assets/Medhafonts/Lato/Lato-Regular.ttf");
+  font-family: Lato-Ragular;
+}
+
+@font-face{
+  src: url("../../Assets/Medhafonts/Bebas_Neue_Pro_Fonts/BebasNeuePro-Bold.ttf");
+  font-family: Bebas-Neue;
+}
+
+
+.second_main_heading {
+    color: #282828;
+    font-size: 3.125rem;
+    line-height: 4.375rem;
+    font-weight: 700;
+    font-family: Lato-Ragular;
+
+}
+
+.second_headingPara {
+    color: #000000;
+    font-size: 1.875rem;
+    line-height: 3.125rem;
+    font-weight: 400;
+    font-family: Lato-Ragular;
+}
+
+.second_grayed_bubble {
+    width: 360px;
+    background-color: #F2F2F2E5;
+    height: 360px;
+    border-radius: 50%;
+    font-size: 1.875rem;
+    line-height: 3.125rem;
+    font-weight:400;
+    font-family: Lato-Ragular;
+    padding-left: 2%;
+    padding-right: 2%;
+    opacity: 0;
+    
+}
+
+.green_circle{
+  background-color: #31B89D;
+  width: 50rem;
+  height: 25rem;
+  border-radius: 25rem 25rem 0 0;
+  position: relative;
+  bottom: 19rem;
+  opacity: 0;
+}
+
+
+.second_row{
+  position: relative;
+  bottom: 8rem;
+}
+
+.circle_container{
+  position: relative;
+}
+
+.semi-circle-svg-img{
+  position:absolute;
+  width: 1000rem;
+  height: 50rem;
+  bottom: 20rem;
+  z-index: 0;
+  opacity: 0;
+}
+
+.green_circle> :first-child>:nth-child(1),
+.green_circle> :first-child>:nth-child(3)
+{
+  font-family: Lato;
+}
+
+.green_circle> :first-child>:nth-child(2){
+  font-family: Bebas-Neue;
+}
+
+  @keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
+
+  @keyframes fadeInFromBottom{
+    0% {opacity: 0; margin-top: 10px;}
+    100%{opacity: 1; margin-top:-10px;}
+  }
+
+
+  
+
+
+
